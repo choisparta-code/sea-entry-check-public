@@ -1,0 +1,26 @@
+{
+  "$schema":"https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name":"sea-entry-check",
+  "version":"0.3.0",
+  "description":"베트남·인도네시아와 한국의 거래·인력·시장 진출을 조사하고 수치·절차·근거·재검토 행동을 개인 작업실에 보관합니다.",
+  "author":{"name":"최상영"},
+  "homepage":"https://sea-research-workbench.choisparta.workers.dev",
+  "repository":"https://github.com/choisparta-code/sea-entry-check-public",
+  "keywords":["vietnam","indonesia","research","compliance","tax","customs"],
+  "extensions":{"com.openai":{"interface":{
+    "displayName":"SEA Research",
+    "shortDescription":"해외 거래의 수치·절차·근거 검토",
+    "longDescription":"나라, 요청 사항, 간략한 상황으로 조사를 시작하세요. 계약·인력·장비 수입·시장 진출의 적용 조건, 세금 계산 기준, 절차·서류·기한, 항목별 원문 근거와 재검토 행동을 구분합니다. 로그인한 개인 작업실에 조사 초안과 실행 내역을 보관하며 최종 결론은 사용자가 직접 확정합니다. 법률·세무 신고나 대리를 수행하지 않습니다. 미확인 수치는 미확인으로 남깁니다.",
+    "developerName":"최상영",
+    "category":"Productivity",
+    "capabilities":["Read research","Save research drafts","Track research progress"],
+    "websiteURL":"https://sea-research-workbench.choisparta.workers.dev",
+    "supportURL":"https://sea-research-workbench.choisparta.workers.dev/support",
+    "privacyPolicyURL":"https://sea-research-workbench.choisparta.workers.dev/privacy",
+    "termsOfServiceURL":"https://sea-research-workbench.choisparta.workers.dev/terms",
+    "defaultPrompt":["베트남, 한국 발주 개발·PM 계약 검토, 베트남 회사 직원이 한국에서 약 1년 수행","베트남으로 스위치·NAC 장비를 납품할 때 세금·통관 절차·서류를 검토해줘","인도네시아 직원 채용과 급여의 세금·사회보험·준비 절차를 검토해줘"],
+    "brandColor":"#163E39",
+    "logo":"./assets/logo.svg",
+    "composerIcon":"./assets/logo.svg"
+  }}}
+}

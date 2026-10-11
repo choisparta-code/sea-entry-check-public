@@ -1,0 +1,13 @@
+{
+  "$schema":"https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers":{"sea-research":{
+    "type":"streamable-http",
+    "url":"https://sea-research-workbench.choisparta.workers.dev/mcp",
+    "extensions":{"com.openai":{"auth":{
+      "type":"oauth",
+      "client":{"mode":"dcr"},
+      "baseScopes":["research:read","research:write"],
+      "oidcEnabled":false
+    }}}
+  }}
+}

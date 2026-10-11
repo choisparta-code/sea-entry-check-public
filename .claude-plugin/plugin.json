@@ -1,0 +1,9 @@
+{
+  "name": "sea-entry-check",
+  "version": "0.3.0",
+  "description": "베트남·인도네시아와 한국의 거래·인력·시장 진출을 조사하고 수치·절차·근거·재검토 행동을 개인 작업실에 보관합니다.",
+  "author": {
+    "name": "최상영"
+  },
+  "keywords": ["vietnam", "indonesia", "market-entry", "compliance", "source-verification"]
+}
