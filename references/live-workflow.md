@@ -1,6 +1,6 @@
 # 공통 MCP 실행 절차
 
-Claude, ChatGPT, Gemini에서 같은 여섯 도구를 사용한다. 서비스별로 도구 이름에 접두사가 붙을 수 있으므로 연결된 도구 목록을 확인한다. 이 파일은 AI의 작업 지침이고 서버 프로그램은 별도로 실행해야 한다.
+Claude, ChatGPT, Gemini 지원 클라이언트에서 같은 여섯 도구를 사용한다. 서비스별로 도구 이름에 접두사가 붙을 수 있으므로 연결된 도구 목록을 확인한다. 공개 패키지는 호스팅된 HTTPS MCP를 포함하므로 사용자는 서버 프로그램을 별도로 실행할 필요가 없다. 설치 후 자신의 계정을 연결한다. 로컬 개발자가 별도 localhost 서버를 사용하는 경우만 직접 서버를 실행한다.
 
 1. `start_research`: 실제 provider(claude/chatgpt/gemini), country(VN/ID), industry, topic, entryType을 전달한다. 테스트는 mode=test, 실제 조사는 mode=live. 반환된 runId와 dashboardUrl을 보관한다. 응답이 불확실하면 `get_research`로 확인하고 중복 실행을 만들지 않는다.
 2. `report_step`: sources → checklist → verification 단계의 시작·완료·실패를 사실대로 보고한다. status는 running/completed/failed/waiting. 짧은 작업 요약만 보내고 숨겨진 추론은 보내지 않는다. 이 보고는 독립 검증 결과가 아니다.
