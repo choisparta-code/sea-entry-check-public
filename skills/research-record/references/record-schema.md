@@ -2,6 +2,8 @@
 
 형식 예시이며 실제 조사 결과가 아니다.
 
+세금·지급·절차가 있는 카드의 선택 필드 `resultView`는 `../../../references/result-view.md`를 따른다. 수치 표는 metrics, 지급표는 resultView.payments, 일반 절차 그림은 resultView.procedures(기존 visa도 호환), 규정과 별도의 사례 재검토는 checklist/conflicts/nextActions로 보존한다. 미정 금액을 0이나 가상 기본값으로 채우지 않는다.
+
 체크리스트 항목의 선택 필드 `legalEvidence`는 질문별 법률 근거 배열이다(항목당 최대 30개). 이전 카드에는 생략 가능하며 새 업무 검토 질문에는 빈 배열을 사용한다. 근거마다 sourceRef(출처 번호 또는 null), provision(조항), originalText(짧은 원문), summary(한국어 요지), effectiveFrom/To(효력 시작/종료일), checkedAt(확인일), currencyStatus, applicability, conditions, exceptions, applicationReason, openQuestions(문자열 배열)를 기록한다.
 
 - 날짜는 YYYY-MM-DD 또는 빈 문자열이다. 시작일보다 이른 종료일은 거부한다. 현행 표시의 확인일은 효력 기간 안에 있어야 한다.
