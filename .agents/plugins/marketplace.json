@@ -1,0 +1,21 @@
+{
+  "name": "sea-research",
+  "interface": {
+    "displayName": "SEA Research"
+  },
+  "plugins": [
+    {
+      "name": "sea-entry-check",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/choisparta-code/sea-entry-check-public.git",
+        "sha": "69c0eebec2b68fe88425c33c5da593118ad27fcd"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
