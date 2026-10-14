@@ -1,4 +1,4 @@
-# SEA Research · 0.3.1 preview
+# SEA Research · 0.3.1
 
 **한국과 베트남·인도네시아의 거래·장비 공급·설치·고용·파견을 조사하고, 근거와 미확인 사항을 개인 작업실에 보관하는 플러그인입니다.** SEA는 Southeast Asia(동남아시아)의 약자이고 등록 ID는 `sea-entry-check`입니다.
 
@@ -34,13 +34,41 @@
 
 [0.3.1 시험 릴리스·패키지 다운로드](https://github.com/choisparta-code/sea-entry-check-public/releases/tag/preview-0.3.1)
 
+## GitHub 사용자 마켓플레이스로 설치하기
+
+OpenAI 공식 디렉터리 심사와 별개로, 아래 공개 GitHub 마켓플레이스를 추가해 **SEA Research 0.3.1**을 설치할 수 있습니다.
+
+**마켓플레이스 저장소:** [https://github.com/choisparta-code/sea-entry-check-public](https://github.com/choisparta-code/sea-entry-check-public)
+
+**마켓플레이스 이름:** sea-research · **표시 이름:** SEA Research
+
+Codex CLI가 설치된 터미널에서 다음 명령을 실행합니다.
+
+```powershell
+codex plugin marketplace add choisparta-code/sea-entry-check-public --ref main
+codex plugin add sea-entry-check@sea-research
+```
+
+1. 첫 번째 명령은 설치 목록에 **SEA Research** 마켓플레이스를 추가합니다.
+2. 두 번째 명령은 그 목록에서 플러그인을 설치합니다. 데스크톱 앱의 Plugins 목록에서도 SEA Research 마켓플레이스를 선택해 설치할 수 있습니다. 목록이 갱신되지 않으면 앱을 재시작합니다.
+3. 설치 후 본인의 SEA 계정을 연결하고 새 채팅을 엽니다. 웹에서도 같은 SEA 계정·로그인 방식을 사용합니다.
+4. 처음 쓰는 경우 아래 웹 접속 안내와 [사용 가이드](https://sea-research-workbench.choisparta.workers.dev/guide)를 따릅니다.
+
+카탈로그는 검증한 0.3.1 설치 원본의 **고정 Git 커밋**을 가리킵니다. main의 설명 문서가 바뀌어도 설치 원본이 자동 교체되지 않습니다. 새 버전을 배포할 때 원본 커밋과 카탈로그를 함께 갱신합니다. 사용자는 다음 명령으로 마켓플레이스 목록을 갱신할 수 있습니다.
+
+```powershell
+codex plugin marketplace upgrade sea-research
+```
+
+이 GitHub 등록은 OpenAI 공식 디렉터리 승인·검색 노출과 별개입니다. 공식 0.3.0 심사는 유지하고 승인 후 0.3.1 업데이트를 진행합니다. 마켓플레이스 추가만으로 플러그인이 자동 설치되거나 조사가 실행되지는 않습니다. 기존 시험 설치본을 사용하는 경우 새 설치와 중복 활성화하지 않도록 사용할 소스를 선택합니다.
+
 ## 버전·등록 상태
 
 문서 갱신일: **2026-10-14 (Asia/Seoul)**. 마켓 상태의 마지막 확인일은 **2026-10-13**입니다.
 
 | 구분 | 상태 |
 | --- | --- |
-| 이 공개 저장소·시험 스킬 | 0.3.1 preview. 공식 마켓 공개 설치와 별개 |
+| GitHub 사용자 마켓플레이스 | SEA Research 0.3.1. 공개 저장소 추가로 설치, 공식 디렉터리 게시와 별개 |
 | OpenAI 공식 제출 | 마지막 조회: **0.3.0 · In review · Not published** |
 | 출시 방침 | 현재 0.3.0 심사 유지 → 승인·공개 → 0.3.1 새 버전 제출·별도 심사·게시 |
 | 운영 웹 | Cloudflare 웹·MCP/API 배포, Auth0 로그인·계정별 저장 |
@@ -50,7 +78,7 @@
 
 ## 사용 순서
 
-1. 현재는 개발자가 안내한 지원 환경에 시험 플러그인을 설치합니다. 공식 공개 후에는 마켓에서 SEA Research를 설치합니다. ZIP을 채팅에 첨부하는 것만으로 설치되지는 않습니다.
+1. 위 GitHub 마켓플레이스를 추가하고 SEA Research 0.3.1을 설치합니다. 공식 디렉터리 공개 이후에는 공식 목록에서도 설치할 수 있습니다. ZIP을 채팅에 첨부하는 것만으로 설치되지는 않습니다.
 2. 본인의 SEA 계정을 연결하고 연구 자료 읽기·초안 저장 권한을 확인합니다. ChatGPT·Codex 로그인과 SEA 로그인은 별개입니다.
 3. 새 채팅에 **나라 → 요청 사항 → 간략 상황 → 저장 요청**을 전달합니다. 필요한 추가 질문에만 답하고 미정인 값은 그대로 둡니다.
 4. 도구 실행 승인과 저장 성공·기록 링크를 확인합니다. JSON만 받은 경우는 서버 저장 완료가 아닙니다.
