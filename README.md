@@ -2,7 +2,37 @@
 
 **한국과 베트남·인도네시아의 거래·장비 공급·설치·고용·파견을 조사하고, 근거와 미확인 사항을 개인 작업실에 보관하는 플러그인입니다.** SEA는 Southeast Asia(동남아시아)의 약자이고 등록 ID는 `sea-entry-check`입니다.
 
-[웹 작업실](https://sea-research-workbench.choisparta.workers.dev/workspace) · [처음 사용자 가이드](https://sea-research-workbench.choisparta.workers.dev/guide) · [시스템 설명](https://sea-research-workbench.choisparta.workers.dev/guide#system) · [시험 릴리스](https://github.com/choisparta-code/sea-entry-check-public/releases/tag/preview-0.3.1)
+## 웹페이지 접속과 사용 가이드
+
+웹은 브라우저에서 바로 접속합니다. **운영 웹을 쓰기 위해 서버를 설치하거나 npm start를 실행할 필요는 없습니다.** 사용 가이드는 로그인 없이 볼 수 있고, 개인 기록은 SEA 로그인 후 확인합니다.
+
+| 무엇을 열까요? | 접속 주소 |
+| --- | --- |
+| 서비스 홈 — 소개·사용 가이드·내 작업실 | [https://sea-research-workbench.choisparta.workers.dev](https://sea-research-workbench.choisparta.workers.dev) |
+| 내 웹 작업실 — 로그인·조사 기록·실행 현황 | [https://sea-research-workbench.choisparta.workers.dev/workspace](https://sea-research-workbench.choisparta.workers.dev/workspace) |
+| 처음 사용자 가이드 — 설치부터 보고서까지 | [https://sea-research-workbench.choisparta.workers.dev/guide](https://sea-research-workbench.choisparta.workers.dev/guide) |
+
+### 웹에 로그인하고 기록 찾기
+
+1. 위 **내 웹 작업실** 링크를 누릅니다. 서비스 홈에서 **내 작업실 열기**를 눌러도 됩니다.
+2. **로그인 · 새 탭**을 눌러 본인의 Google 계정 또는 SEA 이메일·비밀번호로 로그인합니다. 처음이면 로그인 화면의 **Sign up**에서 SEA 계정을 만듭니다.
+3. 원래 작업실 탭으로 돌아옵니다. 접속 안내가 남아 있으면 **로그인 후 연결 확인**을 누르거나 새로고침합니다.
+4. 왼쪽 **조사 기록**에서 저장한 제목을 선택합니다. **실행 현황**에서는 조사 진행과 도구 결과를 확인합니다.
+
+**SEA 계정은 ChatGPT·Codex 계정과 별개입니다.** AI에서 연결한 SEA 계정과 웹의 계정·로그인 방식까지 같아야 같은 기록이 보입니다. Google 로그인과 이메일 가입을 섞지 마세요. 웹에서 직접 기록을 관리할 수 있으며, 채팅의 조사·자동 저장에는 연결된 플러그인/MCP가 필요합니다.
+
+### 목적별 가이드 바로가기
+
+- [플러그인 설치](https://sea-research-workbench.choisparta.workers.dev/guide#install) · [SEA 계정 연결·로그인](https://sea-research-workbench.choisparta.workers.dev/guide#login)
+- [채팅에서 조사·초안 저장](https://sea-research-workbench.choisparta.workers.dev/guide#save) · [웹에서 기록 확인·검토](https://sea-research-workbench.choisparta.workers.dev/guide#view)
+- [보고서 다운로드·PDF 저장](https://sea-research-workbench.choisparta.workers.dev/guide#report) · [시스템 설계도](https://sea-research-workbench.choisparta.workers.dev/guide#system)
+- [로그인·저장 문제 해결](https://sea-research-workbench.choisparta.workers.dev/guide#troubleshooting) · [지원 문의](https://sea-research-workbench.choisparta.workers.dev/support)
+
+기록이 없으면 **같은 SEA 계정인지 → 채팅에 저장 성공과 기록 링크가 있는지 → 웹 새로고침** 순서로 확인합니다. **검토 대기**는 저장된 초안을 사람이 검토할 상태입니다. 조사 보완은 채팅에 요청하고 최종 결론은 웹에서 직접 확정합니다.
+
+보고서는 해당 기록을 먼저 저장한 뒤 **요약·결론 수치 대조 → 보고서 내려받기 · HTML → 내려받은 파일을 Chrome 등에서 열기 → 인쇄(Ctrl+P / ⌘P) → PDF로 저장** 순서로 만듭니다.
+
+[0.3.1 시험 릴리스·패키지 다운로드](https://github.com/choisparta-code/sea-entry-check-public/releases/tag/preview-0.3.1)
 
 ## 버전·등록 상태
 
